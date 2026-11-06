@@ -1,97 +1,115 @@
-nano README.md# 🩺 MedBuddy | IBM Watsonx RAG Assistant
-> **KTU S6 CSD 334 Mini Project** > **Strategic AI Implementation for Medical Knowledge Retrieval**
-
-<div align="center">
-  <a href="https://github.com/prak05/IBM_RAG_MedBuddy">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=40&duration=3000&pause=1000&color=0F62FE&background=FFFFFF00&center=true&vCenter=true&width=600&lines=MEDBUDDY+RAG+ASSISTANT;POWERED+BY+IBM+WATSONX;KTU+S6+MINI+PROJECT" alt="Typing SVG" />
-  </a>
-</div>
-
 <div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![IBM Watsonx](https://img.shields.io/badge/AI-IBM_Watsonx-be95ff?style=for-the-badge&logo=ibm&logoColor=white)](https://www.ibm.com/watsonx)
-[![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Kali Linux](https://img.shields.io/badge/OS-Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)](https://www.kali.org/)
+# ⚡ MedBuddy Watson Legacy
+### IBM Watson Assistant & Early Clinical Conversation Tree Prototype
+**Engineered by [PRAKHAR SHARMA](https://github.com/prak05) • [Interactive Portfolio](https://prak05.github.io/prak05/)**
 
 <br/>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/prak05/IBM_RAG_MedBuddy?style=flat-square&color=FF6B6B)
-![GitHub repo size](https://img.shields.io/github/repo-size/prak05/IBM_RAG_MedBuddy?style=flat-square&color=4ECDC4)
-![Visitors](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fprak05%2FIBM_RAG_MedBuddy&count_bg=%23C84BFF&title_bg=%23555555&title=LIVE+VIEWS&edge_flat=false)
+<a href="https://prak05.github.io/prak05/" target="_blank">
+  <img src="https://img.shields.io/badge/🌐_LIVE_PORTFOLIO-prak05.github.io%2Fprak05-FF002D?style=for-the-badge&logo=safari&logoColor=white&labelColor=171717" height="34" alt="Live Portfolio Website" />
+</a>
+<a href="https://github.com/prak05/MedBuddy-Watson-Legacy">
+  <img src="https://img.shields.io/badge/⚡_ARCHITECTURE-MEDBUDDY-WAT-FF002D?style=for-the-badge&logo=github&logoColor=white&labelColor=171717" height="34" alt="Architecture" />
+</a>
+<a href="mailto:prakharsx05@gmail.com">
+  <img src="https://img.shields.io/badge/✉_INITIALIZE_DISPATCH-prakharsx05%40gmail.com-171717?style=for-the-badge&logo=gmail&logoColor=FF002D&labelColor=171717" height="34" alt="Contact Email" />
+</a>
+
+<br/><br/>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=FF002D&center=true&vCenter=true&width=650&lines=IBM+Watson+Dialog+Trees;Early+Clinical+Bot+Prototype;Precursor+to+MedBuddy+RAG" alt="Typing SVG" />
+</p>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-FF002D.svg?style=flat-square)](LICENSE)
+[![Mesh: Dual-Branch Safe](https://img.shields.io/badge/Mesh-Dual--Branch_Safety-171717?style=flat-square&logo=git&logoColor=FF002D)](#)
+[![Architect: Prakhar Sharma](https://img.shields.io/badge/Architect-Prakhar_Sharma-171717?style=flat-square&logo=visualstudiocode&logoColor=white)](https://github.com/prak05)
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
-## ⚡ 📖 Overview & Core Tech
+### 💻 Active Node HUD & System Specification
 
-**MedBuddy** is an intelligent assistant designed to eliminate hallucinations in medical Q&A. By grounding **IBM Granite LLMs** with specific medical documentation (`data/cd.pdf`) via a **RAG (Retrieval-Augmented Generation)** pipeline, it delivers accurate, context-aware insights.
+```yaml
+System Node    : MedBuddy-Watson-Legacy
+Domain         : Conversational AI Archeology
+Cloud Mesh     : IBM Watson Assistant Cloud
+Core Engine    : IBM Cloud • JSON Dialog Trees • Webhooks • Node.js
+Performance    : Evolutionary Precursor to MedBuddy Clinical RAG & Bedrock Mantle
+Preservation   : Dual-Branch Safety (Ex / main)
+Lead Architect : Prakhar Sharma (RIET CSE '27 • Kerala, India)
+```
 
-### 🚀 The Edge
-* **Zero Hallucination Aim:** Answers are strictly bound to the provided medical text.
-* **Enterprise Grade:** Leveraging IBM Watsonx's robust infrastructure.
-* **Sleek UI:** A reactive Streamlit interface running on Kali Linux.
+---
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-## 🧠 🏗️ Architecture Flow
-
-The system follows a high-performance ingestion and retrieval path.
+## 🏛️ System Architecture Topology
 
 ```mermaid
-graph LR
-    A[📄 data/cd.pdf] -- Ingestion --> B(⚙️ Text Splitter)
-    B -- Chunks --> C{🧠 IBM Watsonx Embeddings}
-    C -- Vectors --> D[(🗄️ ChromaDB Vector Store)]
-    E[👤 User Query] --> F{🔎 Semantic Search}
-    D -- Context Match --> F
-    F -- Augmented Prompt --> G[🤖 IBM Granite LLM]
-    G --> H[💬 Streamlit UI Response]
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+flowchart LR
+    A["Patient / Student Query"] --> B["Watson NLU Intent Classifier"]
+    B --> C["Hierarchical Dialog Tree"]
+    C --> D["Clinical FAQ Knowledge Base"]
+    D --> E["Triage Advice Response"]
+    style A fill:#171717,stroke:#FF002D,stroke-width:2px,color:#F5F2F0
+    style B fill:#252323,stroke:#FF002D,stroke-width:2px,color:#F5F2F0
+    style C fill:#252323,stroke:#74121F,stroke-width:1px,color:#F5F2F0
+    style D fill:#1b1b1b,stroke:#FF002D,stroke-width:2px,color:#F5F2F0
+    style E fill:#171717,stroke:#393434,stroke-width:1px,color:#F5F2F0
+```
 
-📊 📂 Project Vitals
-Directory Structure
-Plaintext
-IBM_RAG_MedBuddy/
-├── 📦 data/
-│   └── cd.pdf                # 🏥 The Knowledge Source
-├── ⚡ src/
-│   ├── app.py                # 🖥️ Frontend User Interface
-│   └── rag_engine.py         # 🧠 The AI Brain (Watsonx Integration)
-├── 📜 requirements.txt       # 🐍 Dependency Manifest
-└── ⚙️ .gitignore              # 🐧 Linux Optimization
-Live Dev Analytics
-<div align="center"> <img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/pin/%3Fusername%3Dprak05%26repo%3DIBM_RAG_MedBuddy%26theme%3Dradical%26border_radius%3D10" alt="Repo Stats" /> </div>
+---
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+## ⚡ Core Capabilities & Bento Matrix
 
-🚀 🛠️ Installation & Launch
-1. Clone & Prep
-Bash
-git clone [https://github.com/prak05/IBM_RAG_MedBuddy.git](https://github.com/prak05/IBM_RAG_MedBuddy.git)
-cd IBM_RAG_MedBuddy
-pip install -r requirements.txt
-2. Credentials
-Ensure your environment holds your IBM secrets:
+<table width="100%" border="0" cellspacing="0" cellpadding="8">
+  <tr bgcolor="#252323">
+    <th align="left" width="30%"><font color="#FF002D">SUBSYSTEM</font></th>
+    <th align="left" width="50%"><font color="#F5F2F0">TECHNICAL ARCHITECTURE &amp; SPECIFICATION</font></th>
+    <th align="center" width="20%"><font color="#FF002D">STATUS</font></th>
+  </tr>
+  <tr bgcolor="#1b1b1b">
+    <td><b>High-Performance Compute</b></td>
+    <td>Optimized execution pipeline using <code>IBM Cloud</code> with decoupled asynchronous workers.</td>
+    <td align="center"><code><font color="#FF002D">OPERATIONAL</font></code></td>
+  </tr>
+  <tr bgcolor="#202020">
+    <td><b>Cloud Infrastructure</b></td>
+    <td>Architected across <code>IBM Watson Assistant Cloud</code> ensuring horizontal scalability and fault-tolerant failovers.</td>
+    <td align="center"><code><font color="#FF002D">HARDENED</font></code></td>
+  </tr>
+  <tr bgcolor="#1b1b1b">
+    <td><b>Validation Benchmark</b></td>
+    <td>Demonstrated metric: <b>Evolutionary Precursor to MedBuddy Clinical RAG & Bedrock Mantle</b> with deterministic evaluation loops.</td>
+    <td align="center"><code><font color="#FF002D">VERIFIED</font></code></td>
+  </tr>
+</table>
 
-Bash
-export WATSONX_APIKEY="your_key"
-export PROJECT_ID="your_id"
-3. Ignite
-Bash
-streamlit run src/app.py
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
+
+## 🚀 Quickstart & Local Execution
+
+```bash
+# Clone the repository with dual-branch mesh
+git clone https://github.com/prak05/MedBuddy-Watson-Legacy.git
+cd MedBuddy-Watson-Legacy
+
+# Review preserved baseline on Ex branch if needed
+git checkout Ex
+
+# Switch to active production main branch
+git checkout main
+
+# Initialize virtual environment & install requirements
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt 2>/dev/null || true
+```
+
+---
 
 <div align="center">
 
+<sub>Architected with extreme precision by <b>Prakhar Sharma</b> • Connected to <a href="https://prak05.github.io/prak05/"><font color="#FF002D">Live Portfolio</font></a> • Dual-Branch Mesh (Ex / main)</sub>
 
-<h3>👨‍💻 Developed for KTU S6 CSD 334</h3> <img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3Dprak05%26show_icons%3Dtrue%26theme%3Dradical%26hide_border%3Dtrue%26count_private%3Dtrue" width="400" />
-
-
-
-<b>Developer:</b> Prakhar Sharma | <b>Institution:</b> RIET | <b>Colleague:</b> Adithya Baiju
-
-
-
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Built%2520With-IBM%2520Watsonx-0f62fe%3Fstyle%3Dfor-the-badge%26logo%3Dibm"> </div># IBM_RAG_MedBuddy
+</div>
